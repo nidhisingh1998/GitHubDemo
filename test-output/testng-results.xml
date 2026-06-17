@@ -1,83 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-15T13:06:24 IST" name="Default suite" finished-at="2026-06-15T13:06:25 IST" duration-ms="1149">
+  <suite started-at="2026-06-17T12:39:20 IST" name="Suite" finished-at="2026-06-17T12:40:02 IST" duration-ms="42645">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@45c7e403]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidation.LoginErrorValidation()[pri:0, instance:SeleniumFrameworkDesign.tests.ErrorValidation@6950ed69]" name="LoginErrorValidation" class="SeleniumFrameworkDesign.tests.ErrorValidation"/>
+      </group> <!-- ErrorHandling -->
+      <group name="purchaseOrder">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" name="submitOrder" class="SeleniumFrameworkDesign.tests.SubmitOrderTest"/>
+      </group> <!-- purchaseOrder -->
     </groups>
-    <test started-at="2026-06-15T13:06:24 IST" name="Default test" finished-at="2026-06-15T13:06:25 IST" duration-ms="1149">
-      <class name="Cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@45c7e403]" started-at="2026-06-15T13:06:24 IST" name="setUpClass" finished-at="2026-06-15T13:06:25 IST" duration-ms="896" status="PASS">
+    <test started-at="2026-06-17T12:39:20 IST" name="Error Validation Test" finished-at="2026-06-17T12:40:01 IST" duration-ms="41364">
+      <class name="SeleniumFrameworkDesign.tests.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumFrameworkDesign.tests.ErrorValidation@6950ed69]" started-at="2026-06-17T12:39:20 IST" name="launchApplication" finished-at="2026-06-17T12:39:26 IST" duration-ms="6333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:SeleniumFrameworkDesign.tests.ErrorValidation@6950ed69]" started-at="2026-06-17T12:39:26 IST" name="LoginErrorValidation" finished-at="2026-06-17T12:39:27 IST" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumFrameworkDesign.tests.ErrorValidation@6950ed69]" started-at="2026-06-17T12:39:27 IST" name="tearDown" finished-at="2026-06-17T12:39:27 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumFrameworkDesign.tests.ErrorValidation@6950ed69]" started-at="2026-06-17T12:39:27 IST" name="launchApplication" finished-at="2026-06-17T12:39:29 IST" duration-ms="2605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:SeleniumFrameworkDesign.tests.ErrorValidation@6950ed69]" started-at="2026-06-17T12:39:29 IST" name="productErrorValidation" finished-at="2026-06-17T12:39:52 IST" duration-ms="22679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumFrameworkDesign.tests.ErrorValidation@6950ed69]" started-at="2026-06-17T12:39:52 IST" name="tearDown" finished-at="2026-06-17T12:40:01 IST" duration-ms="8942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumFrameworkDesign.tests.ErrorValidation -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2026-06-17T12:39:20 IST" name="Submit Order Test" finished-at="2026-06-17T12:40:02 IST" duration-ms="42645">
+      <class name="SeleniumFrameworkDesign.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:39:20 IST" name="launchApplication" finished-at="2026-06-17T12:39:26 IST" duration-ms="6419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:39:26 IST" name="submitOrder" data-provider="getData" finished-at="2026-06-17T12:39:40 IST" duration-ms="13994" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@733037]]>
+                <![CDATA[{password=Nidhi@21, product=IPHONE 13 PRO, email=nidhi21@yopmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@45c7e403]" started-at="2026-06-15T13:06:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-15T13:06:25 IST" duration-ms="133" status="FAIL">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:39:40 IST" name="tearDown" finished-at="2026-06-17T12:39:41 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:39:41 IST" name="launchApplication" finished-at="2026-06-17T12:39:45 IST" duration-ms="3822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:39:45 IST" name="submitOrder" data-provider="getData" finished-at="2026-06-17T12:39:58 IST" duration-ms="13537" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Postivive Test of Submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce Website"]]>
+                <![CDATA[{password=Nidhi@21, product=ZARA COAT 3, email=nidhi12@yopmail.com}]]>
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'I landed on Ecommerce Page' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("I landed on Ecommerce Page")
-public void i_landed_on_ecommerce_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I add product IPHONE {int} Pro to cart")
-public void i_add_product_iphone_pro_to_cart(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I landed on Ecommerce Page' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("I landed on Ecommerce Page")
-public void i_landed_on_ecommerce_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I add product IPHONE {int} Pro to cart")
-public void i_add_product_iphone_pro_to_cart(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.I landed on Ecommerce Page(file:///Users/user/eclipse-workspace/Framework/src/test/java/cucumber/SubmitOrder.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@45c7e403]" started-at="2026-06-15T13:06:25 IST" name="tearDownClass" finished-at="2026-06-15T13:06:25 IST" duration-ms="35" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:39:58 IST" name="tearDown" finished-at="2026-06-17T12:39:58 IST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:39:58 IST" name="launchApplication" finished-at="2026-06-17T12:40:02 IST" duration-ms="3254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:40:02 IST" name="OrderHistoryTest" finished-at="2026-06-17T12:40:02 IST" depends-on-methods="SeleniumFrameworkDesign.tests.SubmitOrderTest.submitOrder" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumFrameworkDesign.tests.SubmitOrderTest@36804139]" started-at="2026-06-17T12:40:02 IST" name="tearDown" finished-at="2026-06-17T12:40:02 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumFrameworkDesign.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -39,6 +39,7 @@ public class AbstractComponents {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(ele));
 	}
+	/*
 	public CartPage goToCartpage()
 	{
 	    /*
@@ -46,10 +47,25 @@ public class AbstractComponents {
          */
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    //wait.until(ExpectedConditions.elementToBeClickable(CartHeader));
+	/*
 		CartHeader.click();
 		CartPage cartpage=new CartPage(driver);
 		return cartpage;
 	
+	}
+*/
+	public CartPage goToCartpage()
+	{
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    wait.until(ExpectedConditions.invisibilityOfElementLocated(
+	            By.cssSelector(".ngx-spinner-overlay")));
+
+	    wait.until(ExpectedConditions.elementToBeClickable(CartHeader));
+
+	    CartHeader.click();
+
+	    return new CartPage(driver);
 	}
 	public OrderPage goToMyOrderPage()
 	{
